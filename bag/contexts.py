@@ -7,6 +7,7 @@ from products.models import Product
 def bag_contents(request):
     bag_items = []
     total = 0
+    quantity = 0
     bag = request.session.get('bag', {})
 
     # Calculate the total cost of items in the bag
@@ -36,10 +37,10 @@ def bag_contents(request):
                 })
 
     # Simplified delivery fee logic
-    delivery = 0 if total >= 80 else 4.99
+    delivery = Decimal("0") if total >= Decimal("80") else Decimal("4.99")
     free_delivery_delta = 80 - total if total < 80 else 0
 
-    grand_total = total + delivery  # Final total including delivery fee
+    grand_total = Decimal(total) + delivery  # Final total including delivery fee
 
     context = {
         'bag_items': bag_items,
