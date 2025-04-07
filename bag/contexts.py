@@ -1,6 +1,8 @@
 from decimal import Decimal
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from django.conf import settings
+
 
 def bag_contents(request):
     bag = request.session.get('bag', {})  # Ensure bag is a dictionary
@@ -38,3 +40,5 @@ def bag_contents(request):
     }
 
     return context
+
+FREE_DELIVERY_THRESHOLD = Decimal(str(settings.FREE_DELIVERY_THRESHOLD))
