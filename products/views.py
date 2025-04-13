@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 from .forms import ProductForm
-from .models import Order, OrderLineItem
+from checkout.models import Order, OrderLineItem
 
 
 # Create your views here.
