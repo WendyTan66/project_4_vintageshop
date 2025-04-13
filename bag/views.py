@@ -66,6 +66,7 @@ def remove_from_bag(request, item_id):
         
         # Save the updated bag to the session
         request.session['bag'] = bag
+        return redirect('view_bag') 
 
         # Return a successful response
         return HttpResponse(status=200)

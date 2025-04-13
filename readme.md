@@ -171,11 +171,61 @@ This test ensures that all key elements on the homepage work correctly, includin
   - ![Screenshot of My Account Link My Profile](media/readme/my_profile.png)
 - **Shopping Bag Icon**
 - Clicking the icon redirects to the shopping bag page.
-- Accurately displays item count if the bag is not empty.
+- Accurately displays total price if the bag is not empty.
 - ![Screenshot of Shopping Bag Icon](path/to/your/shopping_bag.png)
 - **Shop Now Button**
 - A "Shop Now" button is present on the homepage and links correctly to the products listing page.
-- ![Screenshot of Shopping Bag Icon](path/to/your/shop_now.png)
+- ![Screenshot of Shopp Now button](path/to/your/shop_now.png)
+
+### Product Page
+This test ensures that all key elements on the product listing page are displayed correctly and link to the appropriate product detail pages.
+- **Product Listings**
+- All products are displayed on the page.  
+- Each product includes the **name**, **price**, and **category**.  
+- Product images are shown.
+-- ![Screenshot of product listing page](path/to/your/product.png)
+- **Navigation to Product Detail**
+- Clicking on a product image or name redirects the user to the corresponding **product detail page**. 
+-- ![Screenshot of product detail page](path/to/your/product_detail.png) 
+
+### Product Detail Page
+
+This test ensures that each individual product detail page displays the correct product information and provides functional interaction options.
+
+-**Product Information**
+- The **product name**, **price**, **category**, and **description** are clearly displayed.
+- The product image is shown correctly, or a placeholder appears if no image is uploaded.
+
+-**Action Buttons**
+- **Add to Bag** button:
+  - Clicking it adds the product to the shopping bag.
+  - The shopping bag icon updates with the correct item count.
+
+- **Keep Shopping** button:
+  - Clicking it returns the user to the product listing page.
+-- ![Screenshot of product detail page](path/to/your/product_detail.png) 
+
+### Shopping Bag Page
+
+This test ensures that all elements on the shopping bag page display correctly and work as intended.
+-**Product Information**
+#### Bag Contents
+- Each item in the bag is listed with:
+  - **Product name**
+  - **Price**
+  - **Remove** button
+
+- Clicking the **Remove** button removes the item from the bag and updates the total accordingly.
+- ![Screenshot of Shopping Bag Icon](path/to/your/shopping_bag.png)
+
+#### Action Buttons
+- **Keep Shopping** button:
+  - Redirects to the product listing page (`products` page).
+
+- **Secure Checkout** button:
+  - Redirects to the checkout page to complete the purchase.
+
+
 
 ## Deployment
 This application is hosted on Heroku.
