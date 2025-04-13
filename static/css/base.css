@@ -23,6 +23,28 @@ body {
     text-transform: uppercase;
 }
 
+.header-logo {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.hearder-account {
+    background-color: black;
+    color: white !important;
+    padding: 0.3rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -32,6 +54,7 @@ body {
     color: white;
     min-width: 260px;
 }
+
 
 .btn-black {
     background: black;
@@ -53,6 +76,13 @@ body {
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {

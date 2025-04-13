@@ -141,6 +141,41 @@ Below is the wireframe for this project:
 - **Checkout page**
 - **Sign in page**
 - **My profile page**
+## Testing
+### Homepage
+This test ensures that all key elements on the homepage work correctly, including logo, search box, two category dropdowns, my account and shoping bag.
+- **Logo**
+- Clicking the logo redirects the user to the homepage.
+- The logo is visible and styled correctly on all screen sizes.
+- ![Screenshot of Logo](media/readme/home.png)
+- **Search Box**
+- Users can type into the search box.
+- Submitting a query redirects to the products page with relevant results.
+- ![Screenshot of Search Box](media/readme/search.png)
+- **Category Dropdowns**
+- The Clothing and Accessories dropdown menus are functional.
+- Clicking a category link redirects to the filtered product list.
+- Menus collapse/expand correctly on all screen sizes.
+- ![Screenshot of Category Dropdowns1](media/readme/dropdown1.png)
+- ![Screenshot of Category Dropdowns2](media/readme/dropdown2.png)
+- **My Account Links**
+- The link is visible in the navbar.
+- It is linked to product management, signin/signout, and my profile.
+- Redirects appropriately depending on whether the user is logged in or not:
+  - Not Logged in: goes to the login/register page.
+  -![Screenshot of My Account Not Logged In](media/readme/not_logged_in.png)
+  -![Screenshot of Register](media/readme/register.png)
+  -![Screenshot of Sign In](media/readme/sign_in.png)
+  - Logged in: goes to the profile page.
+  - ![Screenshot of My Account Link Logged In](media/readme/logged_in.png)
+  - ![Screenshot of My Account Link My Profile](media/readme/my_profile.png)
+- **Shopping Bag Icon**
+- Clicking the icon redirects to the shopping bag page.
+- Accurately displays item count if the bag is not empty.
+- ![Screenshot of Shopping Bag Icon](path/to/your/shopping_bag.png)
+- **Shop Now Button**
+- A "Shop Now" button is present on the homepage and links correctly to the products listing page.
+- ![Screenshot of Shopping Bag Icon](path/to/your/shop_now.png)
 
 ## Deployment
 This application is hosted on Heroku.
