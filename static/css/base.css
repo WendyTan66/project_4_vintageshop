@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -132,4 +132,17 @@ body {
     position:fixed;
     background: white;
     z-index: -1;
+}
+
+.container {
+    margin-top: 20px;  /* Makes sure there's space above the content */
+}
+
+.logout-message {
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+body.logout-page {
+    padding-top: 200px;  /* Adjust to match header height */
 }

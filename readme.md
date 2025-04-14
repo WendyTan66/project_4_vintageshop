@@ -217,7 +217,7 @@ This test ensures that all elements on the shopping bag page display correctly a
 
 - Clicking the **Remove** button removes the item from the bag and updates the total accordingly.
 - ![Screenshot of Shopping Bag Icon](path/to/your/shopping_bag.png)
-
+- ![Screenshot of Delete an item](path/to/your/delete.png)
 #### Action Buttons
 - **Keep Shopping** button:
   - Redirects to the product listing page (`products` page).
@@ -225,7 +225,31 @@ This test ensures that all elements on the shopping bag page display correctly a
 - **Secure Checkout** button:
   - Redirects to the checkout page to complete the purchase.
 
+### Check Out Page
+This test ensures that all elements of the checkout process work as intended and that the page functions properly depending on user login status.
 
+#### **Form Fields**
+
+- Customer name, email address, delivery address, and payment details are all present.
+- All form fields are required and validate user input.
+- Appropriate error messages appear for missing or invalid fields.
+#### **Order Summary**
+
+- Displays all items in the bag with:
+  - Product names
+  - Individual prices
+- Delivery fee is shown clearly.
+- Total price (including delivery) is calculated correctly.
+
+- ![Screenshot of check out page1](path/to/your/checkout1.png)
+
+#### **Login Requirement**
+
+- If the user is **not logged in**, they are prompted to:
+  - Log in, or
+  - Create an account
+- Once authenticated, they are redirected back to the checkout page with their bag contents preserved.
+- ![Screenshot of check out page2](path/to/your/checkout2.png)
 
 ## Deployment
 This application is hosted on Heroku.

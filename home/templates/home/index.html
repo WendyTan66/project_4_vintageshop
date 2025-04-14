@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+<style>
+    body {
+        background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh; /* or adjust based on your needs */
+    }
+</style>
+{% endblock %}
+
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
