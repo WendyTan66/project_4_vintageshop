@@ -6,7 +6,7 @@ from django.conf import settings
 
 from products.models import Product
 from profiles.models import UserProfile
-
+from decimal import Decimal
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
@@ -42,7 +42,7 @@ class Order(models.Model):
             self.delivery_cost = 4.99
         else:
             self.delivery_cost = 0
-        self.grand_total = self.order_total + self.delivery_cost
+        self.grand_total = Decimal(self.order_total) + Decimal(self.delivery_cost)
         self.save()
     
     def save(self, *args, **kwargs):
