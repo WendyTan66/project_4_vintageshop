@@ -24,17 +24,16 @@ class UserProfileForm(forms.ModelForm):
             'default_street_address2': 'Street Address 2',
             'default_county': 'County',
         }
+    
+        self.fields['default_phone_number'].widget.attrs['autofocus'] = True
 
-        def __str__(self):
-            return self.user.username
+        for field in self.fields:
+         if self.fields[field].required:
+          placeholder = f'{placeholders.get(field, "")} *'
+        else:
+         placeholder = placeholders.get(field, "")
     
-    
-@receiver(post_save, sender=User)
-def create_or_update_user_profile(sender, instance, created, **kwargs):
-    """
-    Create or update the user profile
-    """
-    if created:
-        UserProfile.objects.create(user=instance)
-    # Existing users: just save the profile
-    instance.userprofile.save()
+        self.fields[field].widget.attrs['placeholder'] = placeholder
+        self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
+        self.fields[field].label = False
+
