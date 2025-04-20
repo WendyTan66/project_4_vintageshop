@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -120,8 +120,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
+DATABASES = {
+     'default': dj_database_url.parse('postgresql://neondb_owner:npg_3X0YymbQaOxD@ep-round-sunset-a2sc1sr4.eu-central-1.aws.neon.tech/coral_mom_bats_13095')
+ }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -187,3 +188,5 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

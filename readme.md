@@ -256,9 +256,12 @@ This test ensures that all elements of the checkout process work as intended and
 From My Account, when Product Management clicked, users are directed to Add a Product page.
 - ![Screenshot of add a product page1](path/to/your/project_management1.png)
 - ![Screenshot of add a product page2](path/to/your/project_management2.png)
-#### **Edit Product**
-
-#### **Delete Product**
+#### **Edit Product**&**Delete Product**
+On both product page and product detail page, if the user is a super user, there is a button of edit and a button of delete.If edit button is clicked, users will be redirected to edit page where product details can be ajusted.
+- ![Screenshot of edit delete](path/to/your/edit_delete.png)
+- ![Screenshot of edit delete2](path/to/your/edit_delete2.png)
+- ![Screenshot of edit product](path/to/your/edit.png)
+#### 
 
 ## Deployment
 This application is hosted on Heroku.

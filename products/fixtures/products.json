@@ -1,0 +1,145 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "category": 5,
+    "sku": "0001",
+    "name": "Vintage Corky Craig California Floral Mini Dress",
+    "description": "Condition: Used - Excellent\r\nBrand: Corky Craig\r\nColour: Multi - Multi\r\nMeasurements\r\n\r\nChest\t36 in (91 cm)\r\nWaist\t29 in (74 cm)\r\nLength\t36 in (91 cm)\r\nSleeve length\t23 in (58 cm)",
+    "price": "40.00",
+    "imag_url": null,
+    "image": "Corky_Craig_California_Floral_Mini_Dress.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "category": 6,
+    "sku": "0002",
+    "name": "Emerald Multicoloured 1980's Sleeveless Blouse",
+    "description": "Type: Blouses\r\nCondition description: Preloved in great condition for age please see photos small mark to front\r\nBrand: Emerald\r\nColour: Multi - Multi\r\nMaterial: Viscose\r\nMeasurements\r\nSize 10\r\n\r\nWaist\t40 in (102 cm)\r\nBust\t38 in (97 cm)",
+    "price": "12.00",
+    "imag_url": null,
+    "image": "Emerald_Size_10_Multicoloured_1980s_Sleeveless_Blouse.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "category": 11,
+    "sku": "0003",
+    "name": "Art Deco Style Buckle Black Leather Belt",
+    "description": "Type: Belts\r\nCondition: Used - Very Good\r\nBrand: Unbranded\r\nColour: Black",
+    "price": "22.00",
+    "imag_url": null,
+    "image": "Art_Deco_Style_Buckle_Black_Leather_Belt.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "category": 9,
+    "sku": "0004",
+    "name": "Henry à la Pensée Black & Gold Colour Diamante Necklace, Bracelet, Earrings Set",
+    "description": "Curly stylised leaf necklace, bracelet and clip on earrings set. Made in France. Brand is not printed on the jewellery but was found through research on internet. Clip on earrings do not have any Made in France stamp.\r\n\r\nProduct details\r\n\r\nType: Jewellery\r\nCondition description: Several diamantes missing from necklace and bracelet. (see photos)\r\nBrand: Henry à la Pensée",
+    "price": "150.00",
+    "imag_url": null,
+    "image": "Henry_à_la_Pensée_Black__Gold_Colour_Diamante_Set.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "category": 8,
+    "sku": "0005",
+    "name": "Knitted Cardigan abstract patterned knit sweater",
+    "description": "abstract patterned knit sweater. hand knitted in Peru.\r\n\r\nSize is women's Medium\r\nMeasurements estimate: pit to pit 21\" length 24\"",
+    "price": "23.00",
+    "imag_url": null,
+    "image": "Knitted_Cardigan_abstract_patterned_knit_sweater.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "category": 12,
+    "sku": "0006",
+    "name": "80’s 90’s Jaques Vert Satin Multicoloured Patch Harlequin Jacket Box Blazer",
+    "description": "Vintage 80’s 90’s Jaques Vert multicoloured harlequin print short jacket with long sleeves and slightly cropped with shoulder pads\r\nIn a satin viscose material\r\nM/L - Would best fit sizes 12/14/16",
+    "price": "39.90",
+    "imag_url": null,
+    "image": "80s_90s_Jaques_Vert_Satin_Multicoloured_Patch_Harlequin_Jacket_Box_Blazer.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "category": 10,
+    "sku": "0007",
+    "name": "Massimo Dutti Suede Navy and Brown Leather Handbag",
+    "description": "Condition description: Vintage item with signs of wear as pictured\r\nBrand: Massimo Dutti\r\nDimensions: 15.0cm x 24.0cm (height x width)\r\nColour: Blue and Brown",
+    "price": "25.00",
+    "imag_url": null,
+    "image": "Massimo_Dutti_Suede_Navy_and_Brown_Leather_Handbag.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "category": 7,
+    "sku": "0008",
+    "name": "Vintage Road Blue 100% Cotton Y2K Baggy Skater Jeans",
+    "description": "Condition description: Wear at the bottom from trailing along the ground but otherwise in good condition. Small stain in leg, not that noticeable\r\nBrand: Road Jeans\r\nColour: Blue\r\nMaterial: 100% Cotton\r\nMeasurements\r\n\r\nWaist\t32 in (81 cm)\r\nInside leg\t28 in (71 cm)",
+    "price": "34.99",
+    "imag_url": null,
+    "image": "Vintage_Road_Blue_100_Cotton_Y2K_Baggy_Skater_Jeans.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "category": 5,
+    "sku": "0010",
+    "name": "BLANES Pink Dotted Vintage Dress",
+    "description": "Type: Maxi-Dresses and Midi-Dresses\r\nCondition description: Good - some marks on edge of skirt, see pictures.\r\nBrand: BLANES\r\nSize: M, S\r\nColour: Pink\r\nMeasurements\r\n\r\nChest\t31 in (79 cm)\r\nWaist\t28 in (71 cm)\r\nLength\t44 in (112 cm)",
+    "price": "15.99",
+    "imag_url": null,
+    "image": "BLANES_Pink_Dotted_Vintage_Dress_.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "category": 5,
+    "sku": "0009",
+    "name": "2 Piece Skirt Set Green Floral",
+    "description": "Size: M\r\nColour: Green\r\nPattern: Floral\r\nMaterial: N/A\r\nType: Suit Skirt\r\nStyle: Designer\r\nFastening: Button\r\nFit: Regular\r\nArmpit to Armpit (inches): 19\r\nCollar to Hem (inches): 22\r\nLength (inches): 24\r\nWaist (inches): 30\r\nCondition: Good Used Condition: the has been worn but is well maintained and may show minor signs of wear",
+    "price": "16.00",
+    "imag_url": null,
+    "image": "2_Piece_Skirt_Set_UK_14_Medium_W30_Green_Floral.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "category": 5,
+    "sku": "0011",
+    "name": "Floral Print Sporting Dress Shirt Summer Garden Party",
+    "description": "Vintage floral print dress\r\n\r\nThe lining is ripped\r\n\r\nThe label is loose at back of neck\r\n\r\nNo size tag visible\r\n\r\nPit to pit 18.5”\r\n\r\nLength 36” - top of shoulder to hem",
+    "price": "9.90",
+    "imag_url": null,
+    "image": "Floral_Print_Sporting_Dress_Shirt_Summer_Garden_Party.jpg"
+  }
+}
+]
