@@ -192,9 +192,6 @@ if 'USE_AWS' in os.environ:
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-]
 
 
 # Default primary key field type
