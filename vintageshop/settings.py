@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +28,8 @@ SECRET_KEY = 'django-insecure-*cn0ypz($#a+)bui96qe$(+gn0-7-gp$x0q38l9u4$w8ukn_-j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://127.0.0.1:8000',
+    'vintageshop-c46276b8171e.herokuapp.com']
 
 
 # Application definition
@@ -114,15 +117,18 @@ WSGI_APPLICATION = 'vintageshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
-DATABASES = {
-     'default': dj_database_url.parse('postgresql://neondb_owner:npg_3X0YymbQaOxD@ep-round-sunset-a2sc1sr4.eu-central-1.aws.neon.tech/coral_mom_bats_13095')
- }
+else: 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
@@ -189,4 +195,4 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
+SECRET_KEY = os.environ.get('SECRET_KEY')
