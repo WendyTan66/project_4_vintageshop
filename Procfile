@@ -1,1 +1,1 @@
-web: gunicorn project_4_vintageshop.wsgi:application
+web: gunicorn vintageshop.wsgi:application
