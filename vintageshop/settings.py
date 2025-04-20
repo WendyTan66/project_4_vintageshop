@@ -215,7 +215,7 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY','django-insecure-*cn0ypz($#a+)bui96qe$(+gn0-7-gp$x0q38l9u4$w8ukn_-j')
 
 # Only set STATIC_ROOT when not using AWS
 if 'USE_AWS' not in os.environ:
