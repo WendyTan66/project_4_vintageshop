@@ -11,6 +11,7 @@ from checkout.models import Order, OrderLineItem
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
     products = Product.objects.all()
+    print(products) 
     query = None
     category = request.GET.get('category', '')
     if category:
@@ -35,13 +36,12 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
     }
-
+    print(product.id) 
     return render(request, 'products/product_detail.html', context)
 
 
@@ -72,7 +72,7 @@ def add_product(request):
 
 def edit_product(request, product_id):
     """ Edit a product in the store """
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id) 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():

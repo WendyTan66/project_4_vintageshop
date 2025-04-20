@@ -251,6 +251,15 @@ This test ensures that all elements of the checkout process work as intended and
 - Once authenticated, they are redirected back to the checkout page with their bag contents preserved.
 - ![Screenshot of check out page2](path/to/your/checkout2.png)
 
+### Product management
+#### **Add Product**
+From My Account, when Product Management clicked, users are directed to Add a Product page.
+- ![Screenshot of add a product page1](path/to/your/project_management1.png)
+- ![Screenshot of add a product page2](path/to/your/project_management2.png)
+#### **Edit Product**
+
+#### **Delete Product**
+
 ## Deployment
 This application is hosted on Heroku.
 
