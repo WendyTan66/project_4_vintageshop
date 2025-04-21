@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+{% block extra_css %}
+<style>
+    body {
+        background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh; /* or adjust based on your needs */
+    }
+</style>
 {% endblock %}
 
 {% block content %}
