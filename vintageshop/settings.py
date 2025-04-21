@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['http://127.0.0.1:8000',
+ALLOWED_HOSTS = ['http://127.0.0.1',
     'vintageshop-c46276b8171e.herokuapp.com']
 
 
